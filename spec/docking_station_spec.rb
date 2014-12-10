@@ -3,6 +3,7 @@ require 'docking_station'
 describe DockingStation do
 
 	let(:station) { DockingStation.new(:capacity => 20) }
+	let(:bike) { double :bike }
 
 	it 'should be able to dock a bike' do
 		expect(station.bike_count).to eq 0

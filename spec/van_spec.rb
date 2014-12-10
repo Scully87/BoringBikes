@@ -3,6 +3,7 @@ require 'Van'
 describe Van do
 
 	let(:van) { Van.new(:capacity => 50) }
+	let(:bike) { double :bike }
 
 	it 'should be able to accept a bike' do
 		expect(van.bike_count).to eq 0
